@@ -37,7 +37,7 @@
         mode: 0664
       notify: restart apache
 
-    - name: Ensure Apache is running and starts at boot.
+    - name: Ensure Apache is running and starts at boot
       service:
         name: "{{ apache_service }}"
         state: started
